@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow&display=swap');
+.btn {
+    font-family: 'Archivo Black', sans-serif;
+    color: #121010;
+    font-weight: bold;
+}
+.social-icons {
+    font-size: 30px;
+    margin-left: 10px;
+}

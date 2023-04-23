@@ -24,6 +24,7 @@ function Banner() {
             <a
               href="https://wa.me/+233596840018"
               className="btn btn-light btn-lg py-2 mt-3"
+              id="btn"
             >
               Contact Us
             </a>

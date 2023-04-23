@@ -3,10 +3,11 @@ import MainCSS from "../App.module.css";
 import ServiceImg from "../../src/images/wiring.jpg";
 import Gil4 from "../../src/images/gil4.jpg";
 import Gil5 from "../../src/images/gil5.jpg";
+import Gil8 from "../../src/images/gil8.jpg";
+import Gil6 from "../../src/images/gil6.jpg";
 import {
   BsFacebook,
   BsTwitter,
-  BsGoogle,
   BsWhatsapp,
   BsInstagram,
   BsTiktok,
@@ -23,17 +24,33 @@ const Services = () => {
           md={12}
           lg={12}
           xl={6}
-          className="mt-5"
+          className="mt-5 px-4"
           data-aos="slide-right"
           data-aos-duration="1000"
           data-aos-delay="100"
         >
-          <h3 className={MainCSS.serviceTitle}>
+          <h4 className={MainCSS.serviceTitle}>
             We specialize in designs of electrical blue print, troubleshooting,
             fire alarm systems, domestic wiring, access control and cctv & data
             systems.
-          </h3>
+          </h4>
           <Carousel indicators={false} controls={false}>
+            <Carousel.Item interval={1000}>
+              <img
+                src={Gil8}
+                alt=""
+                className="img-fluid img-responsive"
+                id={MainCSS.serviceImg}
+              />
+            </Carousel.Item>
+            <Carousel.Item interval={1000}>
+              <img
+                src={Gil6}
+                alt=""
+                className="img-fluid img-responsive"
+                id={MainCSS.serviceImg}
+              />
+            </Carousel.Item>
             <Carousel.Item interval={1000}>
               <img
                 src={Gil4}
@@ -58,7 +75,7 @@ const Services = () => {
           md={12}
           lg={12}
           xl={6}
-          className="mt-5"
+          className="mt-5 px-4"
           data-aos="slide-left"
           data-aos-duration="1000"
           data-aos-delay="100"

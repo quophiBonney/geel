@@ -14,13 +14,13 @@ h1, h2, h3 {
 }
 h4, h5, h6 {
   font-family: 'Archivo Black', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 }
 .App {
   text-align: center;
 }
 .bannerBg {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./../src/images/light.jpg')no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./../src/images/light2.jpg')no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -44,6 +44,7 @@ p {
   text-align: center;
   color: #fff;
   font-size: 20px;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 .serviceTitle {
   font-size: 30px;
@@ -51,15 +52,12 @@ p {
 }
 #serviceImg {
   width: 600px;
-  height: 400px;
-  object-fit: cover;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  height: 500px;
+  border-radius: 10px;
 }
 #serviceTwo {
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 370px;
   border-radius: 0% 20% 0 20%/ 0% 20% 0 20%;
 }
 #serviceTwo:hover {
@@ -68,8 +66,11 @@ p {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-
 @media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
   .bannerBg {
     background-size: cover;
     object-fit: contain;

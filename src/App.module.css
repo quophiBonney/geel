@@ -105,7 +105,9 @@ p {
 #serviceContainer {
   overflow-x: hidden;
 }
-
+.serviceIcon {
+  font-size: 35px;
+}
 
 
 @media screen and (max-width: 768px){
@@ -123,6 +125,9 @@ p {
   .serviceTitle {
     font-family: 'Archivo Black', sans-serif;
     font-size: 25px;
+  }
+  #ceoImg {
+    height: 400px;
   }
   #serviceImg {
     width: 100%;

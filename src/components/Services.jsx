@@ -16,7 +16,7 @@ import Gil3 from "../../src/images/gil3.jpg";
 import {Container, Row, Col, Carousel, Button} from "react-bootstrap";
 const Services = () => {
   return (
-    <Container fluid class="mt-5">
+    <Container fluid class="mt-5" id={MainCSS.serviceContainer}>
       <Row className="justify-content-center">
         <Col
           xs={12}
@@ -106,31 +106,31 @@ const Services = () => {
           </p>
           <div className="text-center">
             <a href="" title="facebook">
-              <BsFacebook className="social-icons" />
+              <BsFacebook id={MainCSS.socialIcons} />
             </a>
             <a
               href="https://wa.me/+233554622399"
               className="text-success"
               title="whatsapp"
             >
-              <BsWhatsapp className="social-icons" />
+              <BsWhatsapp id={MainCSS.socialIcons} />
             </a>
             <a href="">
-              <BsTwitter className="social-icons" title="twitter" />
+              <BsTwitter id={MainCSS.socialIcons} title="twitter" />
             </a>
             <a
               href="https://instagram.com/tettehgilbert81?igshid=ZDdkNTZiNTM="
               className="text-danger"
               title="instagram"
             >
-              <BsInstagram className="social-icons" />
+              <BsInstagram id={MainCSS.socialIcons} />
             </a>
             <a
               href="https://www.tiktok.com/@tetteh809"
               title="tiktok"
               className="text-dark"
             >
-              <BsTiktok className="social-icons" />
+              <BsTiktok id={MainCSS.socialIcons} />
             </a>
           </div>
         </Col>

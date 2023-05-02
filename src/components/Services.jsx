@@ -30,11 +30,11 @@ const Services = () => {
           data-aos-duration="1000"
           data-aos-delay="100"
         >
-          <h4 className={MainCSS.serviceTitle}>
+          <p className={MainCSS.serviceTitle}>
             We specialize in designs of electrical blue print, troubleshooting,
             fire alarm systems, domestic wiring, access control and cctv & data
             systems.
-          </h4>
+          </p>
           <Carousel indicators={false} controls={false}>
             <Carousel.Item interval={1000}>
               <img
@@ -109,9 +109,9 @@ const Services = () => {
           </Row>
           <p className="text-dark mt-3">
             Our thoughtfully designed curriculum covers everything that a
-            well-rounded programmer needs to know to become a performant
-            Engineer, from programming fundamentals and object-oriented
-            programming, to advanced programming concepts and engineering tools.
+            well-rounded electrician needs to know to become a performant
+            engineer, from domestic wiring down cctv installation and access
+            control, to advanced electrical engineering concepts and tools.
           </p>
         </Col>
       </Row>

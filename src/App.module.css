@@ -99,6 +99,7 @@ p {
 .serviceTitle {
   font-size: 25px;
   font-family: 'Archivo Black', sans-serif;
+  color: #000;
 }
 #serviceImg {
   width: 550px;
@@ -183,19 +184,26 @@ p {
 }
 
 @media screen and (max-width: 768px){
+  #navbar {
+    height: 75px;
+  }
   .bannerBg {
     background-size: cover;
     object-fit: contain;
     height: 400px;
   }
   .compName {
-    font-size: 30px;
-    margin-top: 90px;
+    font-size: 25px;
+    margin-top: 100px;
   }
   .subText {
     font-size: 18px;
   }
-  .serviceTitle, .caption {
+  .serviceTitle {
+    font-size: 18px;
+    font-family: 'Archivo Black', sans-serif;
+  }
+  .caption {
     font-size: 25px;
   }
   #number, .discover {

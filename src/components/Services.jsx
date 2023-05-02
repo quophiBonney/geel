@@ -5,6 +5,7 @@ import Gil4 from "../../src/images/gil4.jpg";
 import Gil5 from "../../src/images/gil5.jpg";
 import Gil8 from "../../src/images/gil8.jpg";
 import Gil6 from "../../src/images/gil6.jpg";
+import CCTV from "../../src/images/cctv.jpg";
 import {
   BsFacebook,
   BsTwitter,
@@ -16,7 +17,7 @@ import Gil3 from "../../src/images/gil3.jpg";
 import {Container, Row, Col, Carousel, Button} from "react-bootstrap";
 const Services = () => {
   return (
-    <Container fluid class="mt-5" id={MainCSS.serviceContainer}>
+    <Container fluid className={MainCSS.excitedContainer}>
       <Row className="justify-content-center">
         <Col
           xs={12}
@@ -35,6 +36,14 @@ const Services = () => {
             systems.
           </h4>
           <Carousel indicators={false} controls={false}>
+            <Carousel.Item interval={1000}>
+              <img
+                src={CCTV}
+                alt=""
+                className="img-fluid img-responsive"
+                id={MainCSS.serviceImg}
+              />
+            </Carousel.Item>
             <Carousel.Item interval={1000}>
               <img
                 src={Gil8}
@@ -104,35 +113,6 @@ const Services = () => {
             Engineer, from programming fundamentals and object-oriented
             programming, to advanced programming concepts and engineering tools.
           </p>
-          <div className="text-center">
-            <a href="" title="facebook">
-              <BsFacebook id={MainCSS.socialIcons} />
-            </a>
-            <a
-              href="https://wa.me/+233554622399"
-              className="text-success"
-              title="whatsapp"
-            >
-              <BsWhatsapp id={MainCSS.socialIcons} />
-            </a>
-            <a href="">
-              <BsTwitter id={MainCSS.socialIcons} title="twitter" />
-            </a>
-            <a
-              href="https://instagram.com/tettehgilbert81?igshid=ZDdkNTZiNTM="
-              className="text-danger"
-              title="instagram"
-            >
-              <BsInstagram id={MainCSS.socialIcons} />
-            </a>
-            <a
-              href="https://www.tiktok.com/@tetteh809"
-              title="tiktok"
-              className="text-dark"
-            >
-              <BsTiktok id={MainCSS.socialIcons} />
-            </a>
-          </div>
         </Col>
       </Row>
     </Container>

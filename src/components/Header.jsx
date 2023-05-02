@@ -1,41 +1,46 @@
 import React from "react";
-import Logo from "../../src/images/logo.jpg";
+import {Container, Nav, Navbar} from "react-bootstrap";
 import MainCSS from "../App.module.css";
-import {Nav, Navbar, Container} from "react-bootstrap";
+import Logo from "../../src/images/logo.png";
+import {HiMenuAlt3} from "react-icons/hi";
 function Header() {
   return (
-    <div>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        className="sticky-top"
-        id={MainCSS.navbar}
-      >
-        <Container>
-          <Navbar.Brand>
-            <img
-              src={Logo}
-              className="img-fluid img-responsive"
-              alt="logo"
-              id={MainCSS.logo}
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto"></Nav>
-            <Nav>
-              <a
-                href="https://wa.me/+233596840018"
-                className="btn btn-light btn-lg py-2"
-                id="btn"
-              >
-                Book Us Now
-              </a>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      className="fixed-top"
+      id={MainCSS.navbar}
+    >
+      <Container>
+        <Navbar.Brand href="#home">
+          <img
+            src={Logo}
+            className="img-fluid"
+            alt="BOS logo"
+            id={MainCSS.navLogo}
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav">
+          <HiMenuAlt3 className={MainCSS.toggleIcon} />
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto"></Nav>
+          <Nav>
+            <div className={MainCSS.btnGroup}>
+              <Nav.Link>
+                <a
+                  href="https://wa.me/+233554622399"
+                  className="btn"
+                  id={MainCSS.loginBtn}
+                >
+                  Book Us Now
+                </a>
+              </Nav.Link>
+            </div>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

@@ -17,14 +17,14 @@ function Banner() {
               Gilbert Electrical <br />
               Engineering Limited
             </h1>
-            <h4 className={MainCSS.subText}>
+            <p className={MainCSS.subText}>
               The Award Winning Company In Providing Quality Electrical
               Services.
-            </h4>
+            </p>
             <a
-              href="https://wa.me/+233596840018"
-              className="btn btn-light btn-lg py-2 mt-3"
-              id="btn"
+              href="https://wa.me/+233554622399"
+              className="btn btn-lg py-2 mt-3 mb-5"
+              id={MainCSS.contactBtn}
             >
               Contact Us
             </a>
